@@ -1,6 +1,6 @@
 // src/App.tsx
 
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Route, Routes, useNavigate } from "react-router-dom";
 import "./App.css";
 import ProductDetails from "../src/components/ProductList";

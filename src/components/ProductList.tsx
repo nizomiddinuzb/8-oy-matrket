@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import "./Details.css";
 import { FaCartShopping } from "react-icons/fa6";
 
@@ -14,7 +14,6 @@ function ProductDetails() {
   const [quantity, setQuantity] = useState(1);
   const [todos, setTodos] = useState<string[]>([]);
   const { id } = useParams<{ id: string }>();
-  const navigate = useNavigate();
 
   useEffect(() => {
     fetch(`https://dummyjson.com/products/${id}`)
